@@ -3,7 +3,6 @@
 *******************************************************************************/
 
 #include <stdio.h>
-#include<limits.h>
 int greatest(int [],int );
 int main()
 {
@@ -16,11 +15,12 @@ int main()
     return 0;
 }
 int greatest(int a[],int n)
-{ int tem=INT_MIN;
+{ int tem;
     printf("Enter the array elements :");
     for(int i=0;i<n;i++)
     scanf("%d",&a[i]);
-    for(int i=0;i<n;i++)
+   tem=a[0];
+    for(int i=1;i<n;i++)
     {
         if(tem<a[i])
         tem=a[i];
