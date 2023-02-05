@@ -8,9 +8,10 @@
 void unique(int a[],int n);
 int main()
 {
-    int n, a[100];
+    int n;
     printf("Enter the size of array :");
     scanf("%d",&n);
+    int a[n];
     
    
    unique(a,n);
